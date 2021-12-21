@@ -1,0 +1,161 @@
+/************************************************************ 1000px Mark ***********************************************************/
+@media screen and (max-width: 1000px) {
+  /* all links */
+  a:link,
+  a:visited {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
+/************************************************************ 800px Mark ***********************************************************/
+@media screen and (max-width: 800px) {
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Booking Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  section#booking-content {
+    padding: 4vh 3vw;
+    grid-column: center-start / center-end;
+  }
+
+  .booking-content__title {
+    text-align: center;
+  }
+
+  .booking-content__title::after {
+    width: 20%;
+    left: 40%;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Booking Date Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  section#booking-date {
+    padding: 4vh 3vw;
+    grid-column: center-start / center-end;
+    grid-row-gap: 7vh;
+  }
+
+  .booking-date__schedule--arrival > div,
+  .booking-date__schedule--departure > div,
+  .booking-date__schedule--guests > div {
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+    grid-column-gap: 2vw;
+    place-items: center;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Villas Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  section#villas {
+    grid-gap: 0;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Footer Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  footer#footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3rem;
+  }
+}
+
+/************************************************************ 600px Mark ***********************************************************/
+@media screen and (max-width: 600px) {
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Header Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  .header__logo__content--para {
+    font-size: 2rem;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Booking Date Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  section#booking-date {
+    grid-template-rows: repeat(2, max-content);
+  }
+
+  .booking-date__schedule--arrival > div,
+  .booking-date__schedule--departure > div,
+  .booking-date__schedule--guests > div {
+    padding: 4rem;
+    grid-template-columns: min-content;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Events Text Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+
+  section#events-text,
+  section#gallery-text,
+  section#features-text {
+    display: none;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Booking Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Villas Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Motto Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Events Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Gallery Carousel Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Features Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Footer Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  div[class^="villas"] p[class^="villas"] {
+    margin: 1.5rem 0 4rem 0;
+  }
+
+  section#events-content,
+  section#features-content {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  section#events-content,
+  section#gallery-carousel,
+  section#features-content {
+    grid-column: center-start / center-end;
+  }
+
+  section#events-content > div:first-child,
+  section#events-content > div:last-child,
+  section#features-content > div:first-child,
+  section#features-content > div:last-child {
+    border: none;
+  }
+
+  .booking-content__para,
+  div[class^="villas"] p[class^="villas"],
+  .motto__content--para,
+  section#events-content > div p[class*="para"],
+  section#features-content > div p[class*="para"],
+  footer#footer p {
+    font-size: 1.5rem;
+  }
+
+  /* Carousel Left/Right Buttons */
+  .gallery-carousel__btn i {
+    font-size: 5rem;
+  }
+
+  /* Carousel Navigation */
+  .gallery-carousel__nav {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3vh;
+    grid-column-gap: 10vw;
+    height: 12%;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Footer Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+
+  footer#footer {
+    padding: 4vh 2vw;
+  }
+}
+
+/************************************************************ 400px Mark ***********************************************************/
+@media screen and (max-width: 400px) {
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Booking Date Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  .booking-date__schedule {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+    grid-row-gap: 4vh;
+  }
+
+  .booking-date__contact {
+    justify-self: center;
+    padding: 0 2rem;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Villas Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  section#villas {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
