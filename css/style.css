@@ -734,6 +734,87 @@ section#gallery-carousel {
   position: relative;
 }
 
+div.gallery-carousel__img-container {
+  background-color: lawngreen;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.gallery-carousel__img-container--list {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform 2s ease-in-out;
+}
+
+.gallery-carousel__img-container--list__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-carousel__img-container--list__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gallery-carousel__btn--right {
+  right: 0;
+}
+
+.gallery-carousel__nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 5%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center; */
+}
+
+.gallery-carousel__nav--btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  border: none;
+  cursor: pointer;
+}
+
+.current--img-dot {
+  background-color: var(--color-primary);
+}
+
+.hidden {
+  display: none;
+}
+
 /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Features Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
 section#features-content > div:first-child {
   background: linear-gradient(var(--color-secondary-m-light), var(--color-secondary-m-light)),
